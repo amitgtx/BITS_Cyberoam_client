@@ -1,1 +1,14 @@
 A terminal based cyberoam client for BITS network
+
+TOOLS USED
+
+1. shc - Generic shell script compiler
+
+2. curl - For sending post request to cyberoam
+
+
+Using shc
+
+Extract, cd into dir, make and then ./shc -T -f SCRIPT. Done.
+
+
