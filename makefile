@@ -2,9 +2,7 @@ all : shc-3.8.9b crlogin crlogout
 shc-3.8.9b :
 	wget http://www.datsi.fi.upm.es/~frosal/sources/shc-3.8.9b.tgz
 	tar xvfz shc-3.8.9b.tgz
-	cd shc-3.8.9b
-	make
-	cd ..
+	cd shc-3.8.9b && $(MAKE)
 crlogin : crlogin.sh
 	./shc-3.8.9b/shc -T -f crlogin.sh
 	rm crlogin.sh.x.c
